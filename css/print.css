@@ -10,7 +10,7 @@
 
 /* Reset background and default color */
 * {
-    background: #FFF!important;
+    background: #fff!important;
     color: #000!important;
 }
 
@@ -22,7 +22,6 @@
 /* hide every unwanted elements */
 header.site-header,
 header#header,
-.header-image,
 footer,
 footer.site-footer,
 footer#footer,
