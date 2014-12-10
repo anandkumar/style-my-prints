@@ -8,7 +8,7 @@ Style My Prints Plugin for WordPress gives an option to your users to print blog
 The plugin is safe and should work fine with following themes and plugins:
 
  * [Twenty Forteen Theme](https://wordpress.org/themes/twentyfourteen)
- * [Genesis Framework](www.blogsynthesis.com/go/genesis) (and sample child theme)
+ * [Genesis Framework](http://www.blogsynthesis.com/go/genesis) (and sample child theme)
  * [Yet Another Related Posts Plugin - YARPP](https://wordpress.org/plugins/yet-another-related-posts-plugin/)
  * [upPrev Plugin](https://wordpress.org/plugins/upprev/)
 
@@ -19,7 +19,7 @@ Note: I can't make the plugin ready to use for all sites, themes and plugins. So
 ##How it works?
 All modern browsers support print stylesheet. If we define a stlesheet for prints in our site's head section. Print previews and prints will automatically follow those rules.
 
-Since this plugin needs to very site specific. Like how your site is generating and rendering we will need to customize the CSS file depending on the same. It will be really easy to do when you are familiar with Chrome Developer Tools or Firebug Extension. Mozilla Firefox has now it's own similar tool called Inspector under Web Developer Tools, now, and will be also fine.
+Since this plugin needs to very site specific. Like how your site is generating and rendering we will need to customize the CSS file depending on the same. It will be really easy to do when you are familiar with [Chrome Developer Tools](https://developer.chrome.com/devtools) or [Firebug Extension](http://getfirebug.com/). Mozilla Firefox has now it's own similar tool called [Inspector under Web Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector) and will be also fine.
 
 ##Wait! You should customize it first.
 Since the CSS part of the plugin will vary from site to site. You will need to customize before uploading the plugin to your live site. 
