@@ -1,0 +1,173 @@
+/**
+ * Style My Prints CSS
+ *
+ * @package Style My Prints
+ * @author  Anand Kumar
+ * @link    http://www.blogsynthesis.com/plugins/style-my-prints/
+ * @version 1.0.0
+ */
+
+
+/* Reset background and default color */
+* {
+    background: #FFF!important;
+    color: #000!important;
+}
+
+/* You may define page margin here */
+@page {
+    margin:2cm;
+}
+
+/* hide every unwanted elements */
+header.site-header,
+header#header,
+.header-image,
+footer,
+footer.site-footer,
+footer#footer,
+.author-box,
+.post-footer,
+.entry-meta,
+.entry-byline,
+#comments,
+#respond,
+aside,
+nav,
+.toolset,
+.breadcrumb,
+.bio, 
+
+/* Nobody wants to print ads */
+ads, 
+.ads, 
+#ads, 
+ins.adsbygoogle,
+div.fb-like,
+.share-after, 
+.share-before
+{
+    display: none !important;
+}
+
+/* We may customize font-family, font-size and many other things for the prints. */
+article,
+body,
+.wrap, 
+.site-inner, 
+.wrap,
+main.content
+{
+    width: 100%;
+    font-family: Georgia,'Times New Roman',serif;
+    background: none;
+    max-width: initial;
+    padding: 0 !important;
+    margin: 0 !important;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/* Hyperlinks should be plain text. Isn't it */
+a,
+a: visited {
+    color: #555;
+    background: transparent;
+    text-decoration: underline;
+}
+
+a.img {
+    border: 0;
+}
+
+a:link:after, 
+a:visited:after { 
+	content:" [" attr(href) "] "; 
+}
+
+/* More elements to reset for Printers */
+pre,blockquote {
+    font-size: 90%;
+    page-break-inside: avoid;
+	white-space: pre-wrap !important;
+	overflow: overlay !important;
+}
+
+thead {
+    display: table-header-group;
+}
+
+tr,img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100%!important;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+}
+
+p,h2,h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+ul,ol,dl {
+    page-break-before: avoid;
+}
+
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.right {
+    display: inline;
+    margin: 0 0 2px 7px;
+    padding: 4px;
+}
+
+img.left {
+    display: inline;
+    margin: 0 7px 2px 0;
+    padding: 4px;
+}
+
+/* Let's try RTL */
+rtl pre,
+.rtl pre {
+	text-align: left;
+}
+
+/* We will be required to hide the plugins content too */
+.yarpp-related ,
+div#upprev_box {
+    display: none !important;
+}
+
+/*
+article.entry::before {
+	 This could be your logo image. Don't forget to uncomment it
+	content: url(http://example.com/logo.png); 
+)*/
+
+/* prints may have some notice and footnote like this one. Feel free to customize it too. */
+article::after,
+article.entry::after {
+    content: "This post was published on http://blogysnthesis.com. This print is only for your private and non-commercial use. For help mail us at anand@anandkumar.net";
+	font-size: 90%;
+    font-style: italic;
+    line-height: 1.5em;
+    margin: 3em 0;
+}
